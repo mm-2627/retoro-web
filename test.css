@@ -404,7 +404,7 @@ padding-left: 10px;
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: fixed;
-    background-size: 100% auto;
+    background-size: 300px, 150px;
     color: #fff;
     
     overflow: hidden;
