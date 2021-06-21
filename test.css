@@ -399,6 +399,18 @@ padding-left: 10px;
         margin-right: 3em;
       }
    
+   .background{
+    background-image: url(gallery/tanabata3.JPEG);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    color: #fff;
+    
+    overflow: hidden;
+    margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
+}
+   
    
 
 /*ここから追加*/
