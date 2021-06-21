@@ -94,18 +94,6 @@ body p{
 }
 
 
-.main h1{
-  /*position: absolute;*/
-  text-align: center; /*どの長さのタイトルでも真ん中になる*/
-  margin-top: 5.2em;
-  /*margin: 6.2em 7em 6.5em 10.1em;*/
-  /*margin: 28vh 20vw 20vh 26.5vw;*/
-  font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
-  /*background-color: rgba(168, 132, 102, 0.6);*//*上に移動*/
-  /*margin: 215px 240px 295px 610px;*/
-}
-
-
 .contents{
     font-size: 17px;
 }
@@ -238,8 +226,15 @@ padding-left: 10px;
    #nav-drawer {
      display:none;
    }
+
    .main{
      padding-left: 15%;
+   }
+
+   .main h1{
+     text-align: center; /*どの長さのタイトルでも真ん中になる*/
+     margin-top: 5.2em；
+     font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
    }
 
    .background{
@@ -316,6 +311,11 @@ padding-left: 10px;
  @media screen and (max-width:767px) {
     .pc {
       display:none;
+    }
+
+    header{
+      background-color: rgba(165, 127, 96, 0.788);
+      height: 40px;
     }
 
     .sidemenu li{
@@ -398,14 +398,21 @@ padding-left: 10px;
         margin-right: 3em;
       }
 
-      .background{
+
+    .main h1{
+        text-align: center; /*どの長さのタイトルでも真ん中になる*/
+        margin-top: 7em; /*各自調整*/
+        font-size: 4.5em; /*なるべく同じで、バランスを見て調整してください*/
+    }
+
+    .background{
           background-image: url(gallery/tanabata3.JPEG);
           background-repeat: no-repeat;
           background-position: center top;
           background-attachment: fixed;
           background-size: 700px;
           color: #fff;
-          height: 80em;
+          height: 70em;
           overflow: hidden;
           margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
       }
