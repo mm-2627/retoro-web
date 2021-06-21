@@ -89,7 +89,6 @@ body p{
 
 
 
-
 .title{
   background-color: rgba(168, 132, 102, 0.6);
 }
@@ -242,19 +241,19 @@ padding-left: 10px;
    .main{
      padding-left: 15%;
    }
-  
-  .background{
-    background-image: url(gallery/tanabata3.JPEG);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    background-size: 100% auto;
-    color: #fff;
-    height: 30em;
-    overflow: hidden;
-    margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
-}
-  
+
+   .background{
+       background-image: url(gallery/tanabata3.JPEG);
+       background-repeat: no-repeat;
+       background-position: center top;
+       background-attachment: fixed;
+       background-size: 100% auto;
+       color: #fff;
+       height: 30em;
+       overflow: hidden;
+       margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
+   }
+
 /*ここから追加*/
    footer{
        background: rgba(165, 127, 96, 0.788);
@@ -398,22 +397,19 @@ padding-left: 10px;
         margin-left: 3em;
         margin-right: 3em;
       }
-   
-   .background{
-    background-image: url(gallery/tanabata3.JPEG);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-attachment: fixed;
-    background-size: 500px, 600px;
-    color: #fff;
-    height: 600px;
-    overflow: hidden;
-    margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
-}
-   
-   
 
-/*ここから追加*/
+      .background{
+          background-image: url(gallery/tanabata3.JPEG);
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-attachment: fixed;
+          background-size: 700px;
+          color: #fff;
+          height: 80em;
+          overflow: hidden;
+          margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
+      }
+
       footer{
           background: rgba(165, 127, 96, 0.788);
           width: 100%;
@@ -463,5 +459,5 @@ padding-left: 10px;
       .footer-list li.F{
           margin-bottom: 0.5em;
       }
-      /*ここまで*/
+
   }
