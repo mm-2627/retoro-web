@@ -406,7 +406,7 @@ padding-left: 10px;
     background-attachment: fixed;
     background-size: 500px, 600px;
     color: #fff;
-    
+    height: 600px;
     overflow: hidden;
     margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
 }
