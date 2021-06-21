@@ -419,6 +419,10 @@ padding-left: 10px;
         margin-left: 3em;
         margin-right: 3em;
       }
+   
+   .background{
+        height: 45em;
+      }
 
 /*ここから追加*/
       footer{
