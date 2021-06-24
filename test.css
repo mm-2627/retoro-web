@@ -24,6 +24,7 @@ body p{
     height: 100vh;
     position: fixed;
     width: 15%; /*パソコン用のサイドメニューの大きさ*/
+    min-width: 150px;/*追加*/
     flex: 0 0 20%;
     bottom: 0;
 }
@@ -86,13 +87,14 @@ body p{
 }
 
 
-
+/*background 削除*/
 
 
 .title{
   background-color: rgba(168, 132, 102, 0.6);
 }
 
+ /*main h1 削除*/
 
 .contents{
     font-size: 17px;
@@ -114,7 +116,7 @@ h2:first-letter{
     font-size: 1.49em;
 }
 
-.start{ /*目立たせたいところ*/
+.start{ /*目立たせたいところ*//*必要があれば*/
     color: #CD853F;
     font-size: 1.1em;
 }
@@ -130,8 +132,6 @@ h3:first-letter{
     color: rgba(224, 121, 73, 0.952);
     font-size: 1.45em;
 }
-
-/*ここに書かれてあったフッター記述を消す*/
 
 
 /*ここからハンバーガーCSS*/
@@ -162,7 +162,7 @@ padding-left: 10px;
   height: 3px;/*線の太さ*/
   width: 25px;/*長さ*/
   border-radius: 3px;
-  background: #FFFFE0;/*ここが３本線の色！！*/
+  background: #FDF5E6;/*ここが３本線の色！！*/ /*変更*/
   display: block;
   content: '';
   cursor: pointer;
@@ -231,13 +231,13 @@ padding-left: 10px;
      padding-left: 15%;
    }
 
-   .main h1{
+   .main h1{ /*追加*/
      text-align: center; /*どの長さのタイトルでも真ん中になる*/
-     margin-top: 5.2em；
      font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
+     margin-top: 5.2em;
    }
 
-   .background{
+   .background{ /*追加*/
        background-image: url(gallery/tanabata3.JPEG);
        background-repeat: no-repeat;
        background-position: center top;
@@ -249,35 +249,33 @@ padding-left: 10px;
        margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
    }
 
-/*ここから追加*/
+
    footer{
        background: rgba(165, 127, 96, 0.788);
        width: 100%;
-       height: 6.5em;
-       min-height: 60px; /*フッターのサイズは最小60px*/
+       height: 8em; /*変更*/
+       min-height: 100px; /*変更*/
        margin-top: 3em;
-       /*margin-bottom: 0em;*/
    }
 
    footer li{
        list-style: none;
    }
 
-   footer li a{
-       text-decoration: none;
-   }
+   /*footer li a 削除*/
 
    .footer-logo{
-       font-size: 1.2em;
+       font-size: 20px; /*1.4em*//*変更*/
        float: left;
-       margin-top: 1em;
-       margin-left: -3.5em;
+       margin-top: 1.1em; /*変更*/
+       margin-left: -45px; /*-3.5em*/ /*変更*/
        color: rgb(245, 231, 215);
    }
 
    .footer-list{
        float: right;
        margin-right: 1em;
+       font-size: max(15px,1.2vw); /*1.2em*//*追加*/
    }
 
 
@@ -301,8 +299,6 @@ padding-left: 10px;
    .footer-list li.F{
        margin-bottom: 0.5em;
    }
-/*ここまで*/
- }
 
 
 
@@ -313,7 +309,7 @@ padding-left: 10px;
       display:none;
     }
 
-    header{
+    header{ /*追加*/
       background-color: rgba(165, 127, 96, 0.788);
       height: 40px;
     }
@@ -333,7 +329,6 @@ padding-left: 10px;
       height: 7vh;
       width: 15vw;
       margin-left: -1vw;
-      margin-top: vh;
     }
 
     .ABOUT{
@@ -375,6 +370,12 @@ padding-left: 10px;
         font-size: 12px;
     }
 
+    .main h1{ /*追加*/
+      text-align: center; /*どの長さのタイトルでも真ん中になる*/
+      margin-top: 5.2em；
+      font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
+    }
+
 
     h2{
       margin-left: 1em;
@@ -388,7 +389,7 @@ padding-left: 10px;
       font-size: 14px;
     }
 
-    .start{ /*必要があれば*/
+    .start{ /*目立たせたいところ*//*必要があれば*/
         color: #CD853F;
         font-size: 12.8px;
     }
@@ -405,7 +406,7 @@ padding-left: 10px;
         font-size: 4.5em; /*なるべく同じで、バランスを見て調整してください*/
     }
 
-    .background{
+    .background{ /*追加*/
           background-image: url(gallery/tanabata3.JPEG);
           background-repeat: no-repeat;
           background-position: center top;
