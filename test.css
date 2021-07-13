@@ -24,7 +24,7 @@ body p{
     height: 100vh;
     position: fixed;
     width: 15%; /*パソコン用のサイドメニューの大きさ*/
-    min-width: 150px;/*追加*/
+    min-width: 150px;
     flex: 0 0 20%;
     bottom: 0;
 }
@@ -80,32 +80,22 @@ body p{
   margin-top: -2.5vh;
 }
 
-
-
 .container ul {
     list-style: none;
 }
-
-
-/*background 削除*/
-
 
 .title{
   background-color: rgba(168, 132, 102, 0.6);
 }
 
- /*main h1 削除*/
-
 .contents{
-    font-size: 17px;
+    font-size: 16px; /*変更*/
 }
-
-
 
 h2{ /*大きな見出し、h2だけ左側に線*/
     color: rgba(223, 135, 94, 0.904);
     margin-left: 1em;
-    font-size: 27px;
+    font-size: 22px; /*変更*/
     border-left: 0.5em solid rgba(223, 135, 94, 0.904);
     background: #FDF5E6;
     padding: 0em 0.5em;
@@ -113,7 +103,7 @@ h2{ /*大きな見出し、h2だけ左側に線*/
 
 h2:first-letter{
     color: rgba(224, 121, 73, 0.952);
-    font-size: 1.49em;
+    font-size: 1.45em;
 }
 
 .start{ /*目立たせたいところ*//*必要があれば*/
@@ -125,7 +115,7 @@ h3{ /*小さい見出し*/
     color: rgba(223, 135, 94, 0.904);
     margin-left: 2em;
     margin-top: 1.8em;
-    font-size: 25px;
+    font-size: 22px; /*変更*/
 }
 
 h3:first-letter{
@@ -162,7 +152,7 @@ padding-left: 10px;
   height: 3px;/*線の太さ*/
   width: 25px;/*長さ*/
   border-radius: 3px;
-  background: #FDF5E6;/*ここが３本線の色！！*/ /*変更*/
+  background: #FDF5E6;/*ここが３本線の色！！*/
   display: block;
   content: '';
   cursor: pointer;
@@ -231,13 +221,13 @@ padding-left: 10px;
      padding-left: 15%;
    }
 
-   .main h1{ /*追加*/
+   .main h1{
      text-align: center; /*どの長さのタイトルでも真ん中になる*/
      font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
      margin-top: 5.2em;
    }
 
-   .background{ /*追加*/
+   .background{
        background-image: url(gallery/tanabata3.JPEG);
        background-repeat: no-repeat;
        background-position: center top;
@@ -253,8 +243,8 @@ padding-left: 10px;
    footer{
        background: rgba(165, 127, 96, 0.788);
        width: 100%;
-       height: 8em; /*変更*/
-       min-height: 100px; /*変更*/
+       height: 8em;
+       min-height: 100px;
        margin-top: 3em;
    }
 
@@ -262,20 +252,19 @@ padding-left: 10px;
        list-style: none;
    }
 
-   /*footer li a 削除*/
 
    .footer-logo{
-       font-size: 20px; /*1.4em*//*変更*/
+       font-size: 20px; /*1.4em*/
        float: left;
-       margin-top: 1.1em; /*変更*/
-       margin-left: -45px; /*-3.5em*/ /*変更*/
+       margin-top: 1.1em;
+       margin-left: -45px; /*-3.5em*/
        color: rgb(245, 231, 215);
    }
 
    .footer-list{
        float: right;
        margin-right: 1em;
-       font-size: max(15px,1.2vw); /*1.2em*//*追加*/
+       font-size: max(15px,1.2vw); /*1.2em*/
    }
 
 
@@ -302,15 +291,13 @@ padding-left: 10px;
 }
 
 
-
-
 /*スマホのとき*/
  @media screen and (max-width:767px) {
     .pc {
       display:none;
     }
 
-    header{ /*追加*/
+    header{
       background-color: rgba(165, 127, 96, 0.788);
       height: 40px;
     }
@@ -371,7 +358,7 @@ padding-left: 10px;
         font-size: 12px;
     }
 
-    .main h1{ /*追加*/
+    .main h1{
       text-align: center; /*どの長さのタイトルでも真ん中になる*/
       margin-top: 5.2em；
       font-size: 2.5em; /*なるべく同じで、バランスを見て調整してください*/
@@ -407,14 +394,14 @@ padding-left: 10px;
         font-size: 4.5em; /*なるべく同じで、バランスを見て調整してください*/
     }
 
-    .background{ /*追加*/
-          background-image: url(gallery/tanabata3.JPEG);
+    .background{
+          background-image: url(gallery/tanabata4.jpg);
           background-repeat: no-repeat;
           background-position: center top;
           background-attachment: fixed;
-          background-size: 700px;
+          background-size: 1750px;/*700px*/ /*変更*/
           color: #fff;
-          height: 70em;
+          height: 75em; /*変更*/
           overflow: hidden;
           margin-top: -10px; /*ボタンの分下にずれてしまうので、上に10px詰める*/
       }
@@ -422,7 +409,7 @@ padding-left: 10px;
       footer{
           background: rgba(165, 127, 96, 0.788);
           width: 100%;
-          height: 30em;
+          height: 20em; /*変更*/
           min-height: 150px;
       }
 
@@ -430,9 +417,7 @@ padding-left: 10px;
           list-style: none;
       }
 
-      footer li a{
-          text-decoration: none;
-      }
+      /*footer li a 削除*/
 
       .footer-logo{
           font-size: 13.5px;
