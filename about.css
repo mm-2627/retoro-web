@@ -75,6 +75,10 @@ h6{
    h4{ /*追加*/
      font-size: 1.4em;
    }
+  
+  h6{
+      font-size: 15px;
+   }
 
    .ta1{
      margin-left: auto;
